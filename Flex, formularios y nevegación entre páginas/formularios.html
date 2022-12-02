@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+    <title>Pagina flex, formularios y navegacion</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Auto blog</h1>
+    </header>
+    <nav class="navegacion">
+        <p class="efectosnav"><a href="imagenes.html">Imagenes</a></p>
+        <p class="efectosnav"><a href="index.html">Inicio</a></p>
+        <p class="efectosnav"><a href="formularios.html">Formularios</a></p>
+    </nav>
+    <section class="allform">
+        <article class="izq">
+            <div class="inizq">
+                <h1>Introduca sus datos personales</h1>
+                <form class="form" action="enviar.php" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <label for="telefono">Telefono</label>
+                    <input type="text" id="telefono" name="telefono" pattern="\d{9}">
+                </form>
+            </div>
+            <div class="inizq">
+                <h1>Eliga su marca favorita y di porque es su favorita</h1>
+                <form class="form" action="enviar.php" method="post">
+                    <label for="marca">Marca Favorita</label>
+                    <input type="text" id="marca" name="marca"><br>
+                    <label for="explicacion">Explicacion</label>
+                    <textarea name="explicacion" rows=" cols="70"></textarea>   
+                </form>
+            </div>
+        </article>
+        <article class="der">
+            <div class="inder">
+                <h1>¿Que mercado automobilistico prefieres?</h1>
+                <form class="form" action="enviar.php" method="post">
+                    <label for="USDM">USDM (United State Demand Market)</label>
+                    <input type="radio" id="USDM" name="USDM" value="USDM"><br>
+                    <label for="EDM">EDM (European Demand Market)</label>
+                    <input type="radio" id="EDM" name="EDM" value="EDM"><br>
+                    <label for="JDM">JDM (Japanese Demand Market)</label>
+                    <input type="radio" id="JDM" name="JDM" value="JDM">
+                </form>
+            </div>
+            <div class="inder">
+                <h1> Sugerencias</h1>
+                <form class="form" action="enviar.php" method="post">
+                    <textarea name="sugerencia" rows="10" cols="70"></textarea>
+                    <br>
+                    <input type="submit" id="submt">
+                </form>    
+            </div>
+        </article>
+    </section>
+
+</body>
+</html>
